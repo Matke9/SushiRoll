@@ -5,4 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: whitesmoke;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

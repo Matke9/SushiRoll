@@ -1,16 +1,83 @@
-menu {
+.menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
 }
 
-menuItem {
+.menu h1 {
+    font-size: 48px;
+    padding: 100px 0 50px 0;
+    animation: easeIn 2s both;
+}
+
+.menuItems {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.menuItem {
+    display: flex;
+    width: 50%;
     min-width: 400px;
+    border-width: 0;
     border-bottom: 5px;
     border-color: whitesmoke;
     border-style: solid;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: easeIn 2s both;
+}
+
+.i1 {
+    animation-delay: 200ms;
+}
+
+.i2 {
+    animation-delay: 700ms;
+}
+
+.i3 {
+    animation-delay: 1200ms;
+}
+
+.i4 {
+    animation-delay: 1700ms;
+}
+
+.i5 {
+    animation-delay: 2200ms !important;
+}
+
+.i6 {
+    animation-delay: 2700ms;
+}
+
+.i7 {
+    animation-delay: 3200ms;
+}
+
+.i8 {
+    animation-delay: 3700ms;
+}
+
+.menuImage {
+    width: 200px;
+}
+
+@keyframes easeIn {
+    from {
+        opacity: 0;
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+
+    to {
+        opacity: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
