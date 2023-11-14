@@ -1,0 +1,16 @@
+menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+menuItem {
+    display: flex;
+    min-width: 400px;
+    border-bottom: 5px;
+    border-color: whitesmoke;
+    border-style: solid;
+}
