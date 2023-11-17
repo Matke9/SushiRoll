@@ -69,3 +69,7 @@
         bottom: 200px;
     }
 }
+
+header {
+    background-color: transparent !important;
+}

@@ -4,16 +4,23 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #222222bb;
 }
 
 .logo {
     float: left;
-    width: 100px;
+    width: 120px;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo img {
-    width: inherit;
+.logoImg {
+    width: 120px;
+    height: 40px;
 }
 
 .navigation {
@@ -43,4 +50,30 @@ header {
 .navItem.active a {
     color: #333;
     background-color: whitesmoke;
+}
+
+.linije {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        transition-duration: 200ms;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+
+    .linije {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo {
+        width: 100%;
+    }
 }

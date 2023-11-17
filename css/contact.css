@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: easeIn 2s both;
+    width: 80%;
+    align-self: center;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 50px 0;
+}
+
+@keyframes easeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.text {
+    padding: 20px;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+h3 {
+    font-size: 20px;
+    width: 60vw;
+    margin-bottom: 100px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    border-radius: 15px;
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+}
+
+textarea {
+    border-radius: 15px;
+    padding: 5px;
+    align-items: center;
+    resize: vertical;
+    min-height: 200px;
+    max-height: 700px
+}
+
+.radioItem {
+    display: flex;
+    align-items: center;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+button {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    align-self: center;
+}
