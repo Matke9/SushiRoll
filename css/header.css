@@ -24,6 +24,8 @@ header {
 }
 
 .navigation {
+    overflow: hidden;
+    height: 40px;
     float: right;
     display: flex;
     align-items: center;
@@ -59,11 +61,10 @@ header {
 @media screen and (max-width: 700px) {
     header {
         flex-direction: column;
-        transition-duration: 200ms;
     }
 
     .navigation {
-        display: none;
+        height: 0;
         flex-direction: column;
     }
 
@@ -75,5 +76,15 @@ header {
 
     .logo {
         width: 100%;
+    }
+
+    .navItem {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .navigation {
+        height: 40px;
     }
 }
