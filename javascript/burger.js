@@ -24,8 +24,4 @@ function setNavigationHeight() {
     }
 }
 
-// Detect the resize event of the window and call the function
 window.addEventListener('resize', setNavigationHeight);
-
-// Call the function initially to set the correct height
-setNavigationHeight();

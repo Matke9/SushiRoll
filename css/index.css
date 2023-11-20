@@ -73,3 +73,17 @@
 header {
     background-color: transparent !important;
 }
+
+@media screen and (max-width: 700px) {
+    .content {
+        width: 100vw;
+    }
+
+    .animated {
+        width: 80%;
+    }
+
+    .animated img {
+        width: inherit;
+    }
+}
